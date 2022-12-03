@@ -25,6 +25,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 DUNE_API_KEY = env('DUNE_API_KEY')
+REVISE_API_KEY =env('REVISE_API_KEY')
 
 
 # Application definition
@@ -36,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.dune_helpers',
+    'django.contrib.dynamic_nft',
 ]
 
 MIDDLEWARE = [
