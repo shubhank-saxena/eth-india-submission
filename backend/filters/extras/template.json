@@ -1,0 +1,197 @@
+{
+  "behaviouralFilters": {
+    "nftsOwned": {
+      "conditions": ["less than", "greater than"]
+    },
+    "totalNftHeldEver": {
+      "conditions": ["less than", "greater than"]
+    },
+    "walletTraits": {
+      "mintsPerMonth": {
+        "conditions": ["less than", "greater than"]
+      },
+      "nftsPerMint": {
+        "conditions": ["less than", "greater than"]
+      },
+      "avgPricePerMint": {
+        "conditions": ["less than", "greater than"]
+      },
+      "buysPerMonth": {
+        "conditions": ["less than", "greater than"]
+      },
+      "nftsPerBuy": {
+        "conditions": ["less than", "greater than"]
+      },
+      "avgPricePerBuy": {
+        "conditions": ["less than", "greater than"]
+      },
+      "sellsPerMonth": {
+        "conditions": ["less than", "greater than"]
+      },
+      "nftsPerSell": {
+        "conditions": ["less than", "greater than"]
+      },
+      "avgPricePerSell": {
+        "conditions": ["less than", "greater than"]
+      },
+      "portfolioValue": {
+        "conditions": ["less than", "greater than"]
+      },
+      "athPortfolioValue": {
+        "conditions": ["less than", "greater than"]
+      },
+      "totalSpent": {
+        "conditions": ["less than", "greater than"]
+      },
+      "totalReceived": {
+        "conditions": ["less than", "greater than"]
+      },
+      "totalProfit": {
+        "conditions": ["less than", "greater than"]
+      },
+      "totalLoss": {
+        "conditions": ["less than", "greater than"]
+      },
+      "realisedProfit": {
+        "conditions": ["less than", "greater than"]
+      },
+      "unrealisedProfit": {
+        "conditions": ["less than", "greater than"]
+      },
+      "buyVolume": {
+        "conditions": ["less than", "greater than"]
+      },
+      "sellVolume": {
+        "conditions": ["less than", "greater than"]
+      },
+      "mintVolume": {
+        "conditions": ["less than", "greater than"]
+      },
+      "biggestSalePrice": {
+        "conditions": ["less than", "greater than"]
+      },
+      "biggestBuyPrice": {
+        "conditions": ["less than", "greater than"]
+      },
+      "contractDeployed": {
+        "conditions": ["true", "false"]
+      }
+    }
+  },
+  "nftCollectors": {
+    "activityType": {
+      "hodling": {
+        "conditions": ["minimum number of days", "maximum number of days"]
+      },
+      "minted": {
+        "conditions": ["greater than", "less than"]
+      },
+      "sold": {
+        "conditions": ["greater than", "less than"]
+      },
+      "bought": {
+        "conditions": ["greater than", "less than"]
+      },
+      "transferred": {
+        "conditions": ["greater than", "less than"]
+      },
+      "burned": {
+        "conditions": ["greater than", "less than"]
+      },
+      "airDropped": {
+        "conditions": ["greater than", "less than"]
+      },
+      "staked": {
+        "conditions": [
+          "greater than",
+          "less than",
+          "minimum number of days",
+          "maximum number of days"
+        ]
+      }
+    },
+    "numberOfNfts": {
+      "conditions": ["greater than", "less than"]
+    },
+    "percentageHodling": {
+      "conditions": ["greater than", "less than"]
+    },
+    "nftTraits": {
+      "paperHanded": {
+        "conditions": ["true", "false"]
+      },
+      "diamondHanded": {
+        "conditions": ["true", "false"]
+      },
+      "biggestBuyers": {
+        "conditions": ["true", "false"]
+      },
+      "biggestSellers": {
+        "conditions": ["true", "false"]
+      },
+      "smartTrader": {
+        "conditions": ["true", "false"]
+      },
+      "activelyTrading": {
+        "conditions": ["true", "false"]
+      },
+      "rareHolder": {
+        "conditions": ["true", "false"]
+      }
+    }
+  },
+  "ercTokens": {
+    "activityType": {
+      "staking": {
+        "conditions": [
+          "greater than",
+          "less than",
+          "minimum number of days",
+          "maximum number of days",
+          "true",
+          "false"
+        ]
+      },
+      "lending": {
+        "conditions": [
+          "greater than",
+          "less than",
+          "minimum number of days",
+          "maximum number of days",
+          "true",
+          "false"
+        ]
+      },
+      "yieldFarming": {
+        "conditions": [
+          "greater than",
+          "less than",
+          "minimum number of days",
+          "maximum number of days",
+          "true",
+          "false"
+        ]
+      },
+      "liquidityFarming": {
+        "conditions": [
+          "greater than",
+          "less than",
+          "minimum number of days",
+          "maximum number of days",
+          "true",
+          "false"
+        ]
+      },
+      "owns": {
+        "conditions": [
+          "greater than",
+          "less than",
+          "minimum number of days",
+          "maximum number of days",
+          "true",
+          "false"
+        ]
+      }
+    }
+  }
+}
