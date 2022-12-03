@@ -25,7 +25,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 DUNE_API_KEY = env('DUNE_API_KEY')
-REVISE_API_KEY =env('REVISE_API_KEY')
+REVISE_API_KEY = env('REVISE_API_KEY')
+CHAIN_DB = env('CHAIN_DB')
+
 
 
 # Application definition
@@ -37,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.dune_helpers',
-    'django.contrib.dynamic_nft',
+    'backend.filters',
+    'backend.persona',
 ]
 
 MIDDLEWARE = [
@@ -76,10 +78,15 @@ WSGI_APPLICATION = 'backend.backend.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
-    }
+    'default': env.db(),
+    # 'default': dj_database_url.config(default=os.getenv('DATABASE_URL')),
+    'wall_chain_db': {
+        'NAME': os.getenv('WALL_CHAIN_DB_NAME'),
+        'ENGINE': os.getenv('WALL_CHAIN_DB_ENGINE'),
+        'HOST': os.getenv('WALL_CHAIN_DB_HOST'),
+        'USER': os.getenv('WALL_CHAIN_DB_USER'),
+        'PASSWORD': os.getenv('WALL_CHAIN_DB_PASSWORD'),
+    },
 }
 
 

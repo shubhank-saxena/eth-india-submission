@@ -1,4 +1,7 @@
-from backend.dune_helpers.helpers import get_query_results
+from django.db.models import Q
+
+from backend.filters.models.erc20_tokens_eth import ERC20TokensEth
+
 
 class ERC20SearchController(object):
     def __init__(self, data, *args, **kwargs):
